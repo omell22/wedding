@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+   font-family: Kiyv;
+   src: url('./fonts/KyivTypeTitling-Regular3.ttf');
+   
+}
+@font-face{
+   font-family: KiyvBold;
+   src: url('./fonts/KyivTypeTitling-Bold.ttf');
+
+}
+@layer base{
+   body,html{
+      background-color: #F0E2BF;
+      overflow-x: hidden;
+   }
+   p,h2{
+      font-family: Kiyv;
+   }
+   h1,h2{
+      text-transform: uppercase;
+   }
+   a {
+      font-family: KyivBold;
+   }
+   h2 {
+      font-size: 6rem;
+   }
+}
