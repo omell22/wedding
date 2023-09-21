@@ -1,6 +1,6 @@
 <template>
   <section class="flex justify-between">
-    <div class="contacts mx-auto">
+    <div class="contacts mx-auto container">
       <h2 class="mb-4">КОНТАКТИ</h2>
       <form>
         <ul class="flex flex-col gap-6">
@@ -96,10 +96,20 @@ form {
   padding: 25px;
   border: 1px solid #000;
   border-radius: 6px;
+  max-width: 45vw;
+  margin: 0 auto;
 }
 textarea {
   background: none;
   border: 1px solid #000;
   border-radius: 4px;
+}
+img {
+  min-width: 40vw;
+  max-height: 120vh;
+  object-fit: cover;
+}
+h2 {
+  text-align: center;
 }
 </style>

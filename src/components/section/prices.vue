@@ -28,7 +28,7 @@ export default {
           price: "$1000",
         },
         {
-          id: 1,
+          id: 2,
           title: "LOVE STORY",
           price: "$800",
         },
@@ -43,7 +43,9 @@ section {
   padding-top: 120px;
 }
 img {
-  max-width: 50vw;
+  width: 50vw;
+  max-height: 100vh;
+  object-fit: cover;
 }
 span:nth-last-child(1) {
   font-size: 2rem;

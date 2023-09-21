@@ -1,11 +1,13 @@
 <template>
-  <div class="container">
-    <nav class="flex items-center fixed top-0 z-50">
-      <ul>
-        <li v-for="{ text, index } in menuItems" :key="index">{{ text }}</li>
-      </ul>
-    </nav>
-  </div>
+  <section>
+    <div class="container flex">
+      <nav class="flex items-center fixed top-0 z-50 min-w-full">
+        <ul>
+          <li v-for="{ text, index } in menuItems" :key="index">{{ text }}</li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 </template>
 
 <script>

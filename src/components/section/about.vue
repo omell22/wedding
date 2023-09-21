@@ -1,11 +1,9 @@
 <template>
-  <section class="relative">
-    <div class="relative pl-0 ml-0">
-      <img class="" src="../../../src/assets/bg/about.jpg" alt="" />
-      <h2 class="container mx-auto">Про мене</h2>
-      <div
-        class="absolute container flex justify-end right-0 top-1/3 inline-block list-wrapper"
-      >
+  <section>
+    <div class="relative section-wrapper container mx-0 pr-0">
+      <h2 class="">Про мене</h2>
+
+      <div class="list-wrapper absolute flex justify-end">
         <ul class="right-0 z-10 list flex flex-col mr-0">
           <li
             v-for="{ num, title, text } in list"
@@ -51,15 +49,11 @@ export default {
 </script>
 
 <style scoped>
-img {
-  min-width: 90vw;
-}
 h2 {
+  margin-left: calc(((100vw - 1280px) / 2));
   color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 3rem;
+  transform: translate(0, 20%);
+  z-index: 40;
 }
 section {
   padding-top: 120px;
@@ -78,7 +72,10 @@ li:nth-child(2) {
   margin-left: 20px;
 }
 .list-wrapper {
-  width: 60%;
+  bottom: -4rem;
+  width: 100%;
+  right: 0;
+  left: 0;
 }
 .text {
   font-family: Kiyv;
@@ -92,5 +89,11 @@ li:nth-child(2) {
   display: inline-block;
   padding-right: 20px;
   color: var(--grey-50, #777e90);
+}
+.section-wrapper {
+  min-width: calc(((100vw - 1200px) / 2) + 1200px);
+  min-height: 80vh;
+  background-origin: content-box;
+  background: url("../../../src/assets/bg/about.jpg") center/ cover;
 }
 </style>
