@@ -18,9 +18,22 @@ export default {};
 div {
   background: url("../../src/assets/bg/Hero.jpg") center/ cover;
 }
-p {
-  font-size: 10rem;
-  line-height: 100%;
+
+@screen md {
+  p {
+    font-size: 12vw;
+  }
+}
+@screen sm {
+  p {
+    font-size: 12vw;
+  }
+}
+@screen lg {
+  p {
+    font-size: 10rem;
+    line-height: 100%;
+  }
 }
 .mainButton {
   padding: 10px 15px;

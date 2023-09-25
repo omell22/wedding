@@ -1,6 +1,10 @@
 <template>
-  <section class="flex">
-    <img src="../../../src/assets/bg/prices.jpg" alt="" />
+  <section class="flex mt-7 sm:flex-col lg:flex-row">
+    <img
+      src="../../../src/assets/bg/prices.jpg"
+      class="sm:min-w-full lg:min-w-0"
+      alt=""
+    />
     <div class="prices">
       <h2>ЦІНИ</h2>
       <ul class="text-center">

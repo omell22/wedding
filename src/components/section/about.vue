@@ -1,7 +1,9 @@
 <template>
   <section>
-    <div class="relative section-wrapper container mx-0 pr-0">
-      <h2 class="">Про мене</h2>
+    <div
+      class="relative section-wrapper container mx-0 pr-0 sm:hidden md:block"
+    >
+      <h2 class="sm:text-center lg:text-left">Про мене</h2>
 
       <div class="list-wrapper absolute flex justify-end">
         <ul class="right-0 z-10 list flex flex-col mr-0">
@@ -18,6 +20,26 @@
           </li>
         </ul>
       </div>
+    </div>
+    <img
+      src="../../../src/assets/bg/about.jpg"
+      class="lg:hidden md:block sm:block"
+      alt=""
+    />
+    <div class="list-wrapper justify-end hidden lg:hidden sm:flex md:flex">
+      <ul class="right-0 z-10 list flex flex-col mr-0">
+        <li
+          v-for="{ num, title, text } in list"
+          :key="num"
+          class="flex items-start"
+        >
+          <span class="num">{{ num }}</span>
+          <span class="flex flex-col"
+            ><span>{{ title }}</span
+            ><span class="text">{{ text }}</span></span
+          >
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -50,7 +72,6 @@ export default {
 
 <style scoped>
 h2 {
-  margin-left: calc(((100vw - 1280px) / 2));
   color: #fff;
   transform: translate(0, 20%);
   z-index: 40;
@@ -95,5 +116,11 @@ li:nth-child(2) {
   min-height: 80vh;
   background-origin: content-box;
   background: url("../../../src/assets/bg/about.jpg") center/ cover;
+}
+@screen sm {
+  .section-wrapper {
+    min-width: 100vw;
+    min-height: none;
+  }
 }
 </style>

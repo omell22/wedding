@@ -13,6 +13,9 @@
 
 }
 @layer base{
+   .container{
+      overflow: hidden;
+   }
    *{
       box-sizing: border-box;
    }
@@ -29,7 +32,21 @@
    a {
       font-family: KyivBold;
    }
-   h2 {
-      font-size: 6rem;
+   
+   
+   @screen md {
+      h2{
+         font-size: 8vw;
+      }
+   }
+   @screen sm {
+      h2{
+         font-size: 13vw;
+      }
+   }
+   @screen lg{
+      h2 {
+      font-size: 8rem;
+   }
    }
 }
