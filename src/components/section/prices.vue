@@ -1,12 +1,18 @@
 <template>
-  <section class="flex mt-7 sm:flex-col lg:flex-row">
+  <section
+    class="flex mt-7 sm:flex-col md:flex-row relative sm:pt-14 md:pt-16 lg:pt-28"
+  >
     <img
       src="../../../src/assets/bg/prices.jpg"
-      class="sm:min-w-full lg:min-w-0"
+      class="sm:min-w-full md:min-w-0 lg:min-w-0 sm:filter brightness-75 lg:brightness-100 sm:max-h-72 md:max-h-full"
       alt=""
     />
-    <div class="prices">
-      <h2>ЦІНИ</h2>
+    <div class="prices sm:px-0 md:px-20">
+      <h2
+        class="sm:absolute sm:top-1/4 sm:left-1/2 sm:-translate-x-1/2 sm:text-white md:relative md:text-black md:top-0 md:translate-0"
+      >
+        ЦІНИ
+      </h2>
       <ul class="text-center">
         <li v-for="{ price, title, id } in prices" :key="id">
           <span>{{ title }}</span> <span>{{ price }}</span>
@@ -43,12 +49,9 @@ export default {
 </script>
 
 <style scoped>
-section {
-  padding-top: 120px;
-}
 img {
   width: 50vw;
-  max-height: 100vh;
+
   object-fit: cover;
 }
 span:nth-last-child(1) {
@@ -57,7 +60,6 @@ span:nth-last-child(1) {
   font-family: Kiyv;
 }
 .prices {
-  padding: 6rem;
   flex-grow: 1;
 }
 ul {

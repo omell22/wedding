@@ -28,8 +28,24 @@ export default {
 </script>
 
 <style>
+.swiper-pagination-bullet-active {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  z-index: 1000;
+  color: #000;
+  font-weight: bold;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: fixed;
+
+  z-index: 1000;
+}
 .swiper-wrapper {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .swiper-pagination-bullet {
   height: 20px;
@@ -39,9 +55,7 @@ export default {
   background: none;
   position: relative;
 }
-.swiper-pagination-bullet-active {
-  border: 1px solid #000;
-}
+
 .swiper-pagination-bullet:after {
   content: "";
   position: absolute;
@@ -53,12 +67,21 @@ export default {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.swiper-slide-next {
+@screen md {
+  .swiper-slide-next.portfolio-slide {
+    transition: 1s;
+    transform: translate(0, -20px) scale(1.05);
+    z-index: 100;
+
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+.swiper-slide.portfolio-slide {
   transition: 1s;
-  top: -20px;
-  z-index: 100;
-  margin: 0 -10px;
-  border-radius: 5px;
-  overflow: hidden;
+}
+.swiper.portfolio {
+  width: 95%;
 }
 </style>

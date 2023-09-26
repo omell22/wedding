@@ -13,9 +13,8 @@
 
 }
 @layer base{
-   .container{
-      overflow: hidden;
-   }
+   
+   
    *{
       box-sizing: border-box;
    }
@@ -41,7 +40,8 @@
    }
    @screen sm {
       h2{
-         font-size: 13vw;
+         font-size: 11vw;
+         white-space: nowrap;
       }
    }
    @screen lg{
@@ -49,4 +49,8 @@
       font-size: 8rem;
    }
    }
+}
+
+@layer components{
+   
 }

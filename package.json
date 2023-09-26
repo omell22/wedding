@@ -9,6 +9,7 @@
       "preview": "vite preview"
    },
    "dependencies": {
+      "gh-pages": "^6.0.0",
       "swiper": "^10.3.0",
       "vue": "^3.3.4"
    },
