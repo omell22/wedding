@@ -38,19 +38,18 @@ export default {
   color: #000;
   font-weight: bold;
 }
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
   position: fixed;
 
   z-index: 1000;
-}
+} */
 .swiper-wrapper {
   padding-top: 30px;
 }
 .swiper-pagination-bullet {
   height: 20px;
   width: 20px;
-
   padding: 16px;
   background: none;
   position: relative;
@@ -67,14 +66,43 @@ export default {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+@screen sm {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: fixed;
+    top: 100%;
+    z-index: 1000;
+  }
+  .swiper-button-next {
+    right: 35%;
+    margin-top: 20px;
+  }
+  .swiper-button-prev {
+    left: 35%;
+    margin-top: 20px;
+  }
+}
 @screen md {
   .swiper-slide-next.portfolio-slide {
     transition: 1s;
     transform: translate(0, -20px) scale(1.05);
     z-index: 100;
-
     border-radius: 5px;
     overflow: hidden;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+  }
+  .swiper-button-next {
+    right: 15px;
+    margin-top: 0;
+  }
+  .swiper-button-prev {
+    left: 15px;
+    margin-top: 0;
   }
 }
 

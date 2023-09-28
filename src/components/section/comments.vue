@@ -1,18 +1,29 @@
 <template>
   <section class="relative">
-    <swiper :space-between="0" :loop="true" :slidesPerView="1" class="pt-5">
+    <swiper
+      :modules="modules"
+      :space-between="0"
+      :loop="true"
+      :slidesPerView="1"
+      navigation
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+      class="pt-5"
+    >
       <swiper-slide
         class="pb-9"
         v-for="{ img, index, author, text, insta } in swiperTextBase"
         :key="index"
       >
-        <div class="h-wrapper container sm:top-14 sm:absolute text-center">
-          <div class="sm:text-center container relative">
-            <h2 class="block sm:min-w-full lg:min-w-0">Відгуки</h2>
-          </div>
+        <div class="relative">
+          <h2
+            class="block container lg:text-right lg:left-1/2 lg:-translate-x-1/2 sm:text-center sm:top-1/2 sm:-translate-y-1/2 lg:top-0 lg:translate-y-20"
+          >
+            Відгуки
+          </h2>
+          <img :src="img" alt="" class="sm:filter brightness-50" />
         </div>
 
-        <img :src="img" alt="" class="sm:filter brightness-50" />
         <div
           class="wrapper-comment lg:container lg:absolute z-20 lg:-bottom-0 lg:left-1/2 lg:-translate-x-2/4"
         >
@@ -29,8 +40,10 @@
 </template>
 
 <script>
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ref } from "vue";
 export default {
@@ -39,6 +52,12 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
     const swiperTextBase = ref([
       {
         img: "../../../src/assets/imgs/fullslide1.jpg",
@@ -77,15 +96,14 @@ export default {
         insta: "@andrew",
       },
     ]);
-    const swiperOptions = {
-      spaceBetween: 0,
-      loop: true,
-      slidesPerView: 1,
-      pagination: {
-        el: ".swiper-pagination", // CSS селектор для вставки пагінації
-      },
+
+    return {
+      swiperTextBase,
+      // swiperOptions,
+      modules: [Navigation, Pagination, A11y],
+      onSwiper,
+      onSlideChange,
     };
-    return { swiperTextBase, swiperOptions };
   },
 };
 </script>
@@ -131,11 +149,13 @@ h2 {
   /* transform: translate(-20%, 90%); */
   line-height: 100%;
   z-index: 100;
-  right: 0;
+  /* right: 0; */
   position: absolute;
   color: #fff;
 }
 img {
   min-width: 100%;
+  min-height: 50vw;
+  object-fit: cover;
 }
 </style>>
