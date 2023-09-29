@@ -1,31 +1,37 @@
 <template>
-  <section>
-    <div
-      class="relative section-wrapper container mx-0 pr-0 sm:hidden md:block"
-    >
-      <h2 class="sm:text-center lg:text-left">Про мене</h2>
+  <section class="relative sm:mt-10">
+    <div class="wrapper relative section-wrapper sm:hidden lg:block">
+      <div class="container">
+        <h2 class="sm:text-center lg:text-left">Про мене</h2>
 
-      <div class="list-wrapper absolute flex justify-end">
-        <ul class="right-0 z-10 list flex flex-col mr-0">
-          <li
-            v-for="{ num, title, text } in list"
-            :key="num"
-            class="flex items-start"
-          >
-            <span class="num">{{ num }}</span>
-            <span class="flex flex-col"
-              ><span>{{ title }}</span
-              ><span class="text">{{ text }}</span></span
+        <div class="list-wrapper absolute flex justify-end container">
+          <ul class="z-10 list flex flex-col mr-0">
+            <li
+              v-for="{ num, title, text } in list"
+              :key="num"
+              class="flex items-start"
             >
-          </li>
-        </ul>
+              <span class="num">{{ num }}</span>
+              <span class="flex flex-col"
+                ><span>{{ title }}</span
+                ><span class="text">{{ text }}</span></span
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <img
       src="../../../src/assets/bg/about.jpg"
       class="lg:hidden md:block sm:block"
       alt=""
     />
+    <h2
+      class="sm:text-center lg:text-left absolute top-12 left-1/2 -translate-x-2/4 lg:hidden md:block sm:block"
+    >
+      Про мене
+    </h2>
     <div class="list-wrapper justify-end hidden lg:hidden sm:flex md:flex">
       <ul class="right-0 z-10 list flex flex-col mr-0">
         <li
@@ -33,7 +39,7 @@
           :key="num"
           class="flex items-start"
         >
-          <span class="num">{{ num }}</span>
+          <span class="num sm:text-6xl md:text-7xl lg:text-8xl">{{ num }}</span>
           <span class="flex flex-col"
             ><span>{{ title }}</span
             ><span class="text">{{ text }}</span></span
@@ -73,12 +79,10 @@ export default {
 <style scoped>
 h2 {
   color: #fff;
-  transform: translate(0, 20%);
+  line-height: 150%;
   z-index: 40;
 }
-section {
-  padding-top: 120px;
-}
+
 .list {
   background-color: #f0e2bf;
   border: 1px solid var(--blue-100, #001528);
@@ -89,8 +93,15 @@ section {
   padding: 40px;
 }
 
-li:nth-child(2) {
-  margin-left: 20px;
+@screen sm {
+  li:nth-child(2) {
+    margin-left: 0;
+  }
+}
+@screen md {
+  li:nth-child(2) {
+    margin-left: 20px;
+  }
 }
 .list-wrapper {
   bottom: -4rem;
@@ -102,7 +113,7 @@ li:nth-child(2) {
   font-family: Kiyv;
 }
 .num {
-  font-size: 6rem;
+  /* font-size: 6rem; */
   line-height: 75%;
   align-self: start;
   justify-self: start;
@@ -112,7 +123,6 @@ li:nth-child(2) {
   color: var(--grey-50, #777e90);
 }
 .section-wrapper {
-  min-width: calc(((100vw - 1200px) / 2) + 1200px);
   min-height: 80vh;
   background-origin: content-box;
   background: url("../../../src/assets/bg/about.jpg") center/ cover;

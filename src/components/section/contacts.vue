@@ -1,8 +1,16 @@
 <template>
-  <section class="flex justify-between">
-    <div class="contacts mx-auto container">
-      <h2 class="mb-4">КОНТАКТИ</h2>
-      <form>
+  <section
+    class="flex justify-between sm:flex-col-reverse md:flex-row relative"
+  >
+    <div
+      class="contacts mx-auto sm:pt-16 md:pt-18 lg:pt-28 sm:min-w-full md:min-w-min md:px-6"
+    >
+      <h2
+        class="sm:absolute sm:top-24 sm:left-1/2 sm:-translate-x-1/2 sm:text-white md:relative md:text-black md:top-0 md:translate-0 z-10"
+      >
+        КОНТАКТИ
+      </h2>
+      <form class="sm:min-w-full">
         <ul class="flex flex-col gap-6">
           <li v-for="{ id, title, placeholder } in inputs" :key="id">
             <span class="block">{{ title }}</span>
@@ -19,10 +27,16 @@
             ></textarea>
           </li>
         </ul>
-        <buttonorder class="mt-6" />
+        <div class="sm:text-center md:text-left">
+          <buttonorder class="mt-6" />
+        </div>
       </form>
     </div>
-    <img src="../../../src/assets/bg/contacts.jpg" alt="" />
+    <img
+      class="sm:min-w-full md:min-w-0 lg:min-w-0 sm:filter brightness-75 lg:brightness-100 sm:max-h-72 md:max-h-full"
+      src="../../../src/assets/bg/contacts.jpg"
+      alt=""
+    />
   </section>
 </template>
 
@@ -63,9 +77,7 @@ h2 {
 span {
   font-family: KiyvBold;
 }
-img {
-  max-width: 40vw;
-}
+
 input {
   background: none;
   position: relative;
@@ -89,14 +101,12 @@ li:after {
   bottom: 0;
   left: 0;
 }
-.contacts {
-  padding-top: 120px;
-}
+
 form {
   padding: 25px;
   border: 1px solid #000;
   border-radius: 6px;
-  max-width: 45vw;
+
   margin: 0 auto;
 }
 textarea {
@@ -106,7 +116,7 @@ textarea {
 }
 img {
   min-width: 40vw;
-  max-height: 120vh;
+
   object-fit: cover;
 }
 h2 {
