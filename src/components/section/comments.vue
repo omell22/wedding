@@ -5,7 +5,6 @@
       :space-between="0"
       :loop="true"
       :slidesPerView="1"
-      navigation
       @swiper="onSwiper"
       @slideChange="onSlideChange"
       class="pt-5"

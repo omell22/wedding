@@ -5,6 +5,7 @@
   <comments />
   <prices />
   <contacts />
+  <Footerr />
 </template>
 
 <script>
@@ -14,7 +15,7 @@ import portfolio from "./section/porfolio.vue";
 import prices from "./section/prices.vue";
 import contacts from "./section/contacts.vue";
 import comments from "./section/comments.vue";
-
+import Footerr from "./section/Footerr.vue";
 export default {
   components: {
     firstpage,
@@ -23,6 +24,7 @@ export default {
     comments,
     prices,
     contacts,
+    Footerr,
   },
 };
 </script>

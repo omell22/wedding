@@ -39,7 +39,7 @@
           :key="num"
           class="flex items-start"
         >
-          <span class="num">{{ num }}</span>
+          <span class="num sm:text-6xl md:text-7xl lg:text-8xl">{{ num }}</span>
           <span class="flex flex-col"
             ><span>{{ title }}</span
             ><span class="text">{{ text }}</span></span
@@ -113,7 +113,7 @@ h2 {
   font-family: Kiyv;
 }
 .num {
-  font-size: 6rem;
+  /* font-size: 6rem; */
   line-height: 75%;
   align-self: start;
   justify-self: start;
