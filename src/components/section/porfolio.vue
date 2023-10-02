@@ -61,22 +61,22 @@ export default {
     };
     const swiperTextBase = ref([
       {
-        img: "../../../src/assets/imgs/slide1.jpg",
+        img: "../../src/assets/imgs/slide1.jpg",
       },
       {
-        img: "../../../src/assets/imgs/slide2.jpg",
+        img: "../../src/assets/imgs/slide2.jpg",
       },
       {
-        img: "../../../src/assets/imgs/slide3.jpg",
+        img: "../../src/assets/imgs/slide3.jpg",
       },
       {
-        img: "../../../src/assets/imgs/slide1.jpg",
+        img: "../../src/assets/imgs/slide1.jpg",
       },
       {
-        img: "../../../src/assets/imgs/slide2.jpg",
+        img: "../../src/assets/imgs/slide2.jpg",
       },
       {
-        img: "../../../src/assets/imgs/slide3.jpg",
+        img: "../../src/assets/imgs/slide3.jpg",
       },
     ]);
     return {
