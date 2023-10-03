@@ -20,15 +20,15 @@ export default {
     return {
       footer: [
         {
-          img: "../../../src/assets/imgs/footericon.png",
+          img: "/src/assets/imgs/footericon.png",
           link: "",
         },
         {
-          img: "../../../src/assets/imgs/footericon2.png",
+          img: "/src/assets/imgs/footericon2.png",
           link: "",
         },
         {
-          img: "../../../src/assets/imgs/footericon3.png",
+          img: "/src/assets/imgs/footericon3.png",
           link: "",
         },
       ],
