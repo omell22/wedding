@@ -16,7 +16,7 @@ export default {};
 
 <style scoped>
 div {
-  background: url("../../../src/assets/bg/hero.jpg") center/ cover;
+  background: url("../../../src/assets/bg/Hero.jpg") center / cover;
 }
 
 @screen md {
