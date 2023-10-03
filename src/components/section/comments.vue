@@ -4,10 +4,11 @@
       :modules="modules"
       :space-between="0"
       :loop="true"
+      navigation
       :slidesPerView="1"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
-      class="pt-5"
+      class="pt-5 comments-swiper"
     >
       <swiper-slide
         class="pb-9"
@@ -108,6 +109,9 @@ export default {
 </script>
 
 <style scoped>
+.swiper {
+  padding-bottom: 50px;
+}
 @screen sm {
   section {
     margin-top: 60px;
