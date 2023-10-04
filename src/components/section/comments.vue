@@ -45,6 +45,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import slide from "../../../src/assets/imgs/fullslide1.jpg";
 import { ref } from "vue";
 export default {
   components: {
@@ -60,37 +61,37 @@ export default {
     };
     const swiperTextBase = ref([
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
       },
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
       },
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
       },
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
       },
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
       },
       {
-        img: "../../../src/assets/imgs/fullslide1.jpg",
+        img: slide,
         author: "АНДРІЙ І НАТАЛЯ",
         text: "Фото просто чудові! Отримали перші знімки, як і обіцяли у день весілля. Дуже задоволені якістю і процесом зйомки. Можемо сміливо рекомендувати цього супер фотографа.",
         insta: "@andrew",
