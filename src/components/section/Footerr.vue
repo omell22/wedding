@@ -14,21 +14,25 @@
   </div>
 </template>
 
-<script setup>
+<script>
+import footericon from "../../../src/assets/imgs/footericon.png";
+import footericon2 from "../../../src/assets/imgs/footericon2.png";
+import footericon3 from "../../../src/assets/imgs/footericon3.png";
+
 export default {
   data() {
     return {
       footer: [
         {
-          img: "/src/assets/imgs/footericon.png",
+          img: footericon,
           link: "",
         },
         {
-          img: "/src/assets/imgs/footericon2.png",
+          img: footericon2,
           link: "",
         },
         {
-          img: "/src/assets/imgs/footericon3.png",
+          img: footericon3,
           link: "",
         },
       ],
