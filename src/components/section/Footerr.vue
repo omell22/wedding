@@ -15,20 +15,23 @@
 </template>
 
 <script>
+import footerlink1 from "../../../src/assets/imgs/footericon.png";
+import footerlink2 from "../../../src/assets/imgs/footericon2.png";
+import footerlink3 from "../../../src/assets/imgs/footericon3.png";
 export default {
   data() {
     return {
       footer: [
         {
-          img: "../../../src/assets/imgs/footericon.png",
+          img: footerlink1,
           link: "",
         },
         {
-          img: "../../../src/assets/imgs/footericon2.png",
+          img: footerlink2,
           link: "",
         },
         {
-          img: "../../../src/assets/imgs/footericon3.png",
+          img: footerlink3,
           link: "",
         },
       ],

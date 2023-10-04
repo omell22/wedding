@@ -47,6 +47,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ref } from "vue";
+import slide1 from "../../../src/assets/imgs/slide1.jpg";
+import slide2 from "../../../src/assets/imgs/slide2.jpg";
+import slide3 from "../../../src/assets/imgs/slide3.jpg";
 export default {
   components: {
     Swiper,
@@ -61,22 +64,22 @@ export default {
     };
     const swiperTextBase = ref([
       {
-        img: "../../../src/assets/imgs/slide1.jpg",
+        img: slide1,
       },
       {
-        img: "../../../src/assets/imgs/slide2.jpg",
+        img: slide2,
       },
       {
-        img: "../../../src/assets/imgs/slide3.jpg",
+        img: slide3,
       },
       {
-        img: "../../../src/assets/imgs/slide1.jpg",
+        img: slide1,
       },
       {
-        img: "../../../src/assets/imgs/slide2.jpg",
+        img: slide2,
       },
       {
-        img: "../../../src/assets/imgs/slide3.jpg",
+        img: slide3,
       },
     ]);
     return {
