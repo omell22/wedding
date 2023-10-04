@@ -83,6 +83,45 @@ export default {
     left: 35%;
     margin-top: 20px;
   }
+  .comments-swiper > .swiper-button-next,
+  .comments-swiper > .swiper-button-prev {
+    position: absolute;
+    top: 93%;
+    z-index: 1000;
+  }
+  .comments-swiper > .swiper-button-next {
+    right: 50px;
+    margin-top: 0px;
+  }
+  .comments-swiper > .swiper-button-prev {
+    right: 5%;
+    left: calc(100% - 180px);
+    margin-top: 0px;
+  }
+  .comments-swiper > .swiper-button-next:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150%;
+    background: #000;
+    height: 5px;
+    border-radius: 15px;
+    transform: translate(-40%, -50%);
+    z-index: 1000;
+  }
+  .comments-swiper > .swiper-button-prev:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150%;
+    background: #000;
+    height: 5px;
+    border-radius: 15px;
+    transform: translate(5%, -50%);
+    z-index: 1000;
+  }
 }
 @screen md {
   .swiper-slide-next.portfolio-slide {
@@ -105,6 +144,15 @@ export default {
   .swiper-button-prev {
     left: 15px;
     margin-top: 0;
+  }
+  .comments-swiper > .swiper-button-next {
+    right: calc((100vw - 1280px) / 2);
+    margin-top: 0px;
+  }
+  .comments-swiper > .swiper-button-prev {
+    right: 5%;
+    left: calc((100vw - 1280px) / 2 + 1130px);
+    margin-top: 0px;
   }
 }
 
