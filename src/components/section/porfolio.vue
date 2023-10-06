@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center sm:pb-24 md:pb-12">
+  <section id="portfolio" class="text-center sm:pb-24 md:pb-12">
     <h2 class="text-center sm:mb-8 md:mb-18 lg:mb-20">Портфоліо</h2>
     <div class="inline-block px-10 container navigation-controls">
       <div class="container px-0 slider">

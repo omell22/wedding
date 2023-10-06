@@ -1,5 +1,5 @@
 <template>
-  <section class="relative sm:mt-10">
+  <section class="relative sm:mt-10" id="about">
     <div class="wrapper relative section-wrapper sm:hidden lg:block">
       <div class="container">
         <h2 class="sm:text-center lg:text-left">Про мене</h2>

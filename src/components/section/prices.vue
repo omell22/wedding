@@ -1,5 +1,6 @@
 <template>
   <section
+    id="prices"
     class="flex mt-7 sm:flex-col md:flex-row relative sm:pt-14 md:pt-16 lg:pt-28"
   >
     <img
